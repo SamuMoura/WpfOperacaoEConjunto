@@ -1,0 +1,33 @@
+﻿<Window x:Class="WpfOpEConj.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfOpEConj"
+        mc:Ignorable="d"
+        Title="Operações com Conjuntos" Height="450" Width="800">
+    <Grid Margin="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <!-- Conjunto A -->
+        <StackPanel Grid.Column="0" Margin="10">
+            <TextBlock Text="Conjunto A" FontWeight="Bold" />
+            <TextBox x:Name="txtElementoA" />
+            <Button Content="Adicionar em A" Click="AdicionarA_Click" />
+            <Button Content="Remover de A" Click="RemoverA_Click" />
+            <ListBox x:Name="lstA" />
+        </StackPanel>
+
+        <!-- Conjunto B -->
+        <StackPanel Grid.Column="1" Margin="10">
+            <TextBlock Text="Conjunto B" FontWeight="Bold" />
+            <TextBox x:Name="txtElementoB" />
+            <Button Content="Adicionar em B" Click="AdicionarB_Click" />
+            <Button Content="Remover de B" Click="RemoverB_Click" />
+            <ListBox x:Name="lstB" />
+        </StackPanel>
+    </Grid>
+</Window>
